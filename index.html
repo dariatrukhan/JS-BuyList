@@ -1,16 +1,117 @@
 <!DOCTYPE html>
-<html>
-<head lang="uk">
+<html lang="uk">
+<head>
     <meta charset="UTF-8">
-    <title>My Page</title>
-
-
+    <title>Buy List - Список покупок</title>
+    <meta name="description" content="Список покупок">
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
+
 <body>
-	<span class="product-item">
-		Apple
-		<span class="amount">4</span>
-	</span>
+	
+	<main class="bigcontainer">
+			
+		<section class="container1">
+
+				<form class="form">
+					<input type="text" id="name" placeholder="Назва товару">
+					<button type="button" id="add" data-tooltip="Додати новий товар">Додати</button>
+				</form>
+
+				
+			<ul class="items-list">
+				<li class="item-row">
+					<div class="buy-item">
+						<span class="item-name"><s>Помідори</s></span>
+
+						<div class="quantity-controls">
+							<button type="button" class="btn-minus2" disabled>-</button>
+							<span class="quantity-number" >2</span>
+							<button type="button" class="btn-plus" disabled>+</button>
+						</div>
+						<div class="distt">
+							<button class="decline-btn2" data-tooltip="Видалити товар" disabled>×</button>
+						</div>
+						<div class="item-actions">
+							<button type="button" class="status-btn" data-tooltip="Змінити статус" disabled>Не
+								куплено</button>
+						</div>
+						
+					</div>
+				</li>
+
+				<li class="item-row">
+
+					<div class="buy-item">
+					<p class="item-name">Печиво</p>
+					
+					<div class="quantity-controls">
+						<button class="btn-minus" data-tooltip="Зменшити кількість">−</button>
+						<span class="quantity-number">2</span>
+					
+						<button class="btn-plus" data-tooltip="Збільшити кількість">+</button>
+					</div>
+					
+					<div class="item-actions">
+						<button class="status-btn" data-tooltip="Змінити статус">Куплено</button>
+					</div>
+					<div class ="dist">
+						<button class="decline-btn" data-tooltip="Видалити товар">×</button>
+					</div>
+
+                  </div>
+				</li>
+
+				<li class="item-row">
+					<div class="buy-item">
+					<div class="form2">
+						<input type="text" id="edit-name" value="Сир" aria-label="Назва товару для редагування">
+					</div>
+					
+					<div class="quantity-controls">
+						<button class="btn-minus" disabled data-tooltip="Неможливо зменшити">−</button>
+						<span class="quantity-number">1</span>
+						<button class="btn-plus" data-tooltip="Збільшити кількість">+</button>
+					</div>
+					
+					<div class="item-actions">
+						<button class="status-btn" data-tooltip="Змінити статус">Куплено</button>
+					</div>
+					<div class="dist">
+						<button class="decline-btn" data-tooltip="Видалити товар">×</button>
+					</div>
+					
+					</div>
+					
+				</li>
+							
+			</ul>
+		</section>
+
+		<section class="container2">
+			<div class="stats-group">
+				<h2 class="header">Залишилося</h2>
+				<ul class="content">
+					<li class="badge">Печиво <span class="badge-num">2</span></li>
+					<li class="badge">Сир <span class="badge-num">1</span></li>
+				</ul>
+			</div>
+		
+			<div class="stats-group">
+				<h2 class="middle-line">Куплено</h2>
+				<ul class="content">
+					<li class="badge bought"><s>Помідори</s> <span class="badge-num"><s>2</s></span></li>
+				</ul>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer-badge">
+		<div class="badge-main">Buy List</div>
+		<div class="badge-hidden-text">Created by: </div>
+		<div class="badge-hidden-text2">DARIA TRUKHAN</div>
+	</footer>
+	
 </body>
 </html>
